@@ -1,7 +1,7 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
+import 'package.google_fonts/google_fonts.dart';
 void main() {
   runApp(MyApp());
 }
@@ -22,9 +22,17 @@ class MyApp extends StatelessWidget {
               height: 400,
               width: 400,
               ),
+
               SizedBox(height:50),
-              Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMOwR-_45OiadN8CymKhw08QALAidVKLYJPA8Zgn9qS0mn2c_wbbi4c2npgeVcdD3hTs&usqp=CAU'
+              Text(
+                'This is the image viewer app!',
+                style:GoogleFonts.aBeeZee(
+                  color: Colors.black,
+                  fontSize: 27,
+                  fontWeight:FontWeight.bold,
+                ),
               ),
+              SizedBox(height:50),
           ],
           ),
         ),
